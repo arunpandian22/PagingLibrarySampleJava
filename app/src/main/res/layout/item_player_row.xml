@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="250dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="kjbjk"
+                android:textSize="16dp"
+                android:textColor="#ff00ff"
+                android:textStyle="bold"
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvRole"
+                android:textColor="#ff00ff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvBattingStyle"
+                android:layout_width="wrap_content"
+                android:textColor="#ff00ff"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvBowlingStyle"
+                android:layout_width="wrap_content"
+                android:textColor="#ff00ff"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvMajerTeams"
+                android:layout_width="wrap_content"
+                android:textColor="#ff00ff"
+                android:textStyle="bold"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
