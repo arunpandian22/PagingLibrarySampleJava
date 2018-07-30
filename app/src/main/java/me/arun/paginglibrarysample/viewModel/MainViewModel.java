@@ -16,7 +16,7 @@ import me.arun.paginglibrarysample.model.Player;
 public class MainViewModel extends AndroidViewModel
 {
     private static final int INITIAL_LOAD_KEY = 0;
-    private static final int PAGE_SIZE = 20;
+    private static final int PAGE_SIZE = 10;
     private static final int PREFETCH_DISTANCE = 5;
     public PagingLibraryApplication pagingLibraryApplication;
     public LivePagedListBuilder livePlyerList;
@@ -29,7 +29,7 @@ public class MainViewModel extends AndroidViewModel
         pagingLibraryApplication =(PagingLibraryApplication) application;
         PlayerDao playerDao= pagingLibraryApplication.appDataBase.bookDao();
         usersList = new LivePagedListBuilder<>(
-                playerDao.liveListData(), /* page size */ 20).build();
+                playerDao.liveListData(), /* page size */ PAGE_SIZE).setInitialLoadKey(INITIAL_LOAD_KEY).build();
         livePlyerList=new LivePagedListBuilder(playerDao.liveListData(),new PagedList.Config.Builder().setPageSize(PAGE_SIZE).setPrefetchDistance(PREFETCH_DISTANCE).setPageSize(PAGE_SIZE).build());
 
 
